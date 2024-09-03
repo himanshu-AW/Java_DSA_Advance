@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class PalindromeNum {
+    
     boolean isPalindrome(int num){
         int rev=0;
         int temp = num;
