@@ -20,13 +20,26 @@ import java.util.Scanner;
 // So, 4 is not a prime number.
 
 public class PrimeNumberOrNot {
-    boolean isPrimeNum(int n ){
+    boolean isPrimeNum(int n ){ // TC:O(√n)
         if(n<=1) return false;
         for(int i=2;i<= Math.sqrt(n);i++){
             if(n%i==0) return false;
         }
         return true;
     }
+
+    boolean isPrimeNumOptimized(int n){ // TC: 3X times faster than O(√n)
+        if(n ==1) return false;
+        if(n==2 || n==3 ) return true;
+        if(n%2==0 || n%3==0) return false;
+        for(int i=5;i*i<=n;i+=6){
+            if(n%i==0 || n%(i+2)==0){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -40,6 +53,13 @@ public class PrimeNumberOrNot {
             if(obj.isPrimeNum(N)){
                 System.out.println(N+" is a Prime number.");
             }else{
+                System.out.println(N+" is not a Prime number.");
+            }
+
+            if(obj.isPrimeNumOptimized(N)){
+                System.out.println(N+" is a Prime number.");
+            }
+            else{
                 System.out.println(N+" is not a Prime number.");
             }
 

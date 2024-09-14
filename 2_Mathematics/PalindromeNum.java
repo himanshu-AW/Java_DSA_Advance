@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class PalindromeNum {
     
-    boolean isPalindrome(int num){
+    boolean isPalindrome(int num){ 
         int rev=0;
         int temp = num;
         while(temp!=0){
@@ -11,7 +11,7 @@ public class PalindromeNum {
         }
         return (num == rev);
     }
-    
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -26,6 +26,7 @@ public class PalindromeNum {
             else{
                 System.out.println(num+" Not a Palindrome Number");
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }finally{
