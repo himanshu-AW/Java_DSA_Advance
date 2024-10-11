@@ -1,4 +1,4 @@
-package Recursion;
+// package Recursion;
 
 public class Power {
     // brutefore approach -> TC: O(a^(b)) = exponential which is very bad.
@@ -24,5 +24,6 @@ public class Power {
 
         System.out.println(powerOfAToBOptimized(2, 8));
         System.out.println(powerOfAToBOptimized(2, 9));
+        System.out.println(powerOfAToBOptimized(2, 64));
     }
 }
