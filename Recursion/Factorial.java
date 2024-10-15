@@ -1,4 +1,4 @@
-package Recursion;
+// package Recursion;
 
 public class Factorial {
     static long factorialOfNumber(int num){

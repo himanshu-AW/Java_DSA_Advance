@@ -20,6 +20,8 @@ public class PrintSubArr {
         }
         System.out.println("Total subarrays: "+totalSubArr);
     }
+
+    
     public static void findMinSumMaxSumOfSubArr(int arr[]) {
         int n = arr.length;
         int minSum=Integer.MAX_VALUE;
@@ -36,7 +38,7 @@ public class PrintSubArr {
                 minSum = Math.min(minSum, sum);
                 maxSum = Math.max(maxSum, sum);
             }
-            System.out.println();
+            // System.out.println();
         }
         System.out.println("Minimum sum of subarrays: "+minSum);
         System.out.println("Maximum sum of subarrays: "+maxSum);
