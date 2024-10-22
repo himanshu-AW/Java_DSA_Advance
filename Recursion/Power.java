@@ -15,7 +15,7 @@ public class Power {
             return halfOfPower*halfOfPower;
         }
         // for odd power
-        return halfOfPower*halfOfPower*2;
+        return halfOfPower*halfOfPower*a;
 
     }
     public static void main(String[] args) {
