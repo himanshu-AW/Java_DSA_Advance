@@ -39,6 +39,7 @@ public class Subsets {
 
         // Include the current element
         list.add(nums[i]);
+        
         subsetsHelper(nums, i + 1, list, listOfList);
 
         // Backtrack: Remove the last added element before returning
