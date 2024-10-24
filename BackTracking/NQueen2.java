@@ -38,15 +38,10 @@ public class NQueen2 {
                 board[row][j] = '-';
             }
         }
-        
     }
 
-    static int count = 0;
-
-    public static void main(String[] args) {
-        int n = 5;
-        // number of queens must be greater than 3. otherwise there is not ways to show
-        // it.
+    private static int count = 0;
+    public int printNqeen(int n){
         char[][] board = new char[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -54,6 +49,16 @@ public class NQueen2 {
             }
         }
         nQueen(board, 0);
-        System.out.println("Number of possible  ways: " +count );
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        // number of queens must be greater than 3. otherwise there is not ways to show
+        // it.
+        
+        NQueen2 obj = new NQueen2();
+        int ans = obj.printNqeen(n);
+        System.out.println("Number of possible  ways: " +ans );
     }
 }
