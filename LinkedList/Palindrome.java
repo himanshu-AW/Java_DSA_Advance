@@ -17,8 +17,8 @@ public class Palindrome {
         Node prevNode = null;
         Node currentNode = node;
         Node nextNode = null;
-
-        while (currentNode != null) {
+    
+    while (currentNode != null) {
             nextNode = currentNode.next;
             currentNode.next = prevNode;
             prevNode = currentNode;

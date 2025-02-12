@@ -168,13 +168,13 @@ public class Patterns {
             }
             System.out.print("    ");
             
-            for (int j = 0; j < n; j++) {
-                if ( i==(n-1)/2 &&j<=i ) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
-            }
+            // for (int j = 0; j < n; j++) {
+            //     if ( i==(n-1)/2 &&j<=i ) {
+            //         System.out.print("* ");
+            //     } else {
+            //         System.out.print("  ");
+            //     }
+            // }
 
             System.out.println();
         }
